@@ -65,8 +65,11 @@
 body{
     margin:0;
     font-family:'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0504AA 0%, #0a0f5c 50%, #020024 100%);
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 53%, rgba(12, 89, 99, 1) 100%);
     color:white;
+    position:relative;
+    z-index:0;
 }
 
 /* HEADER */
@@ -76,9 +79,12 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:18px 40px;
-    background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(12px);
+
+    background: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(5,4,170,0.85) 60%, rgba(10,58,95,0.9) 100%);
+    backdrop-filter: blur(14px);
+
     border-bottom:1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
 /* LEFT SIDE INLINE */
@@ -138,10 +144,17 @@ body{
 /* CARD */
 
 .dashboard-card{
-    background:linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    background: linear-gradient(145deg, rgba(255,255,255,0.14), rgba(255,255,255,0.05));
     border-radius:18px;
     padding:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+.dashboard-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+    transition: 0.3s;
 }
 
 /* POWER BI */
